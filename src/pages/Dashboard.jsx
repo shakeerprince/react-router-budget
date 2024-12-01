@@ -9,12 +9,13 @@ export function dashboardLoader(){
 }
 
 
-function Dashboard() {
+const Dashboard = ()=> {
     const { userName } = useLoaderData()
 
   return (
-    <div>Dashboard
+    <div>
         <h1> {userName}</h1>
+        Dashboard
     </div>
   )
 }

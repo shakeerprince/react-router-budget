@@ -1,5 +1,5 @@
 import { CurrencyDollarIcon } from "@heroicons/react/24/solid";
-
+import {Form} from "react-router-dom"
 const AddBudgetForm = ()=>{
     return(
         <div className="form-wrapper">

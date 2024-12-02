@@ -22,7 +22,7 @@ const AddBudgetForm = ()=>{
                     </label>
                     <input type="number" step="0.01" 
                     name="newBudgetAmount" id="newBudgetAmount"
-                    placeholder=""enterKeyHint=".g., $69"
+                    placeholder="e.g., $69"
                     required 
                     inputMode="decimal"
                     />

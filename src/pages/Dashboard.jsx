@@ -2,6 +2,7 @@ import React from 'react'
 import { fetchData } from '../helpers';
 import { useLoaderData } from 'react-router-dom';
 import Intro from "../components/Intro"
+import { toast } from "react-toastify";
 
 //loader
 export function dashboardLoader(){
@@ -12,7 +13,7 @@ export function dashboardLoader(){
 //action
 export async function dashboardAction({request}){
     const data = await request.formData();
-    const formData = Object.formEntries(data)
+    const formData = Object.fromEntries(data)
    try{
     localStorage.setItem("userName", JSON.stringify(formData.userName))
     return toast.success(`Welcome, ${formData.userName}`)

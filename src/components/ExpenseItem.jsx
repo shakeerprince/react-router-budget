@@ -6,6 +6,7 @@ const ExpenseItem = ({ expense })=>{
         <td>{expense.name}</td>
         <td>{formatCurrency(expense.amount)}</td>
         <td>{formatDateToLocaleString(expense.createdAt)}</td>
+        <td>{formatDateToLocaleString(expense.createdAt)}</td>
             
         </>
     )

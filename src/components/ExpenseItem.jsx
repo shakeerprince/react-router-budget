@@ -1,6 +1,6 @@
 import { formatCurrency, formatDateToLocaleString } from "../helpers";
 
-const ExpenseItem = ({expense})=>{
+const ExpenseItem = ({ expense })=>{
     return(
         <>
         <td>{expense.name}</td>

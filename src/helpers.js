@@ -68,7 +68,7 @@ export const calculateSpentByBudget = (budgetId)=>{
     const budgetSpent = expenses.reduce((acc, expense)=> {
         if(expense.budgetId !== budgetId ) return acc 
         
-        return acc += expenses.amount
+        return acc += expense.amount
 
     }, 0)
     return budgetSpent;

@@ -1,5 +1,5 @@
 export const wait = ()=> new Promise(res =>
-    setTimeout(res, Math.random() * 2000))
+    setTimeout(res, Math.random() * 800))
  
 
 
@@ -75,6 +75,8 @@ export const calculateSpentByBudget = (budgetId)=>{
 }
 
 //Formatting
+export const formatDateToLocaleString = (epoch)=> 
+    new Date(epoch).toLocaleString();
 
 //Formatting percentages
 export const formatPercentage = (amt)=>{
